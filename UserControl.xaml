@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="OptiAssistant.MainControl"
+﻿<UserControl x:Class="ContourUnions.MainControl"
          
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -247,14 +247,14 @@
                         VerticalContentAlignment="Bottom"
                         Margin="5,0"
                         x:Name="CreateAvoids_CB"
-                        Click="CreateAvoids_CB_Click"/>
+                        />
                             <CheckBox Content="Opti Structures"
                         VerticalAlignment="Center"
                                       IsChecked="false"
                         VerticalContentAlignment="Bottom"
                         Margin="5,0"
                         x:Name="CreateOptis_CB"
-                        Click="CreateOptis_CB_Click"/>
+                        />
 
                           
 

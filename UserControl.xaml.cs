@@ -18,9 +18,8 @@ using VMS.TPS;
 using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 using JR.Utils.GUI.Forms;
-using System.IO;
 
-namespace OptiAssistant
+namespace ContourUnions
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -96,9 +95,7 @@ namespace OptiAssistant
         public IEnumerable<Structure> sorted_structureList;
         public IEnumerable<Structure> sorted_emptyStructuresList;
         public IEnumerable<Structure> sorted_zptvList;
-        public List<selectedPTVresult> SptvDetails = new List<selectedPTVresult>();
-        public List<globalPtvDetails> GlobalDetails = new List<globalPtvDetails>();
-
+        
         public string user;
         public double dosePerFraction;
         public string day;
@@ -1148,7 +1145,12 @@ namespace OptiAssistant
         #endregion event controls
         //---------------------------------------------------------------------------------
         #region helper methods
-
+        void SelectAllText(object sender, RoutedEventArgs e)
+        {
+            var textBox = e.OriginalSource as TextBox;
+            if (textBox != null)
+                textBox.SelectAll();
+        }
 
         // methods used in even handlers
         public void LogUser(string script)
@@ -1245,24 +1247,6 @@ namespace OptiAssistant
         #endregion helper methods
         //---------------------------------------------------------------------------------
     }
-    public class selectedPTVresult
-    {
-        public double lCI { get; set; }
-
-        public double lGI { get; set; }
-        public double lV12 { get; set; }
-
-        public string sPTVid { get; set; }
-    }
-    
-    public class globalPtvDetails
-    {
-        public string ci { get; set; }
-
-        public string gi { get; set; }
-        public double nBv12 { get; set; }
-
-        public double nBv5 { get; set; }
-    }
+   
    
 }

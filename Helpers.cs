@@ -9,7 +9,7 @@ using System.Windows.Input;
 using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 
-namespace OptiAssistant
+namespace ContourUnions
 {
   public static class Helpers
   {

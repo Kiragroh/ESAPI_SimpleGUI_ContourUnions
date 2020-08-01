@@ -9,7 +9,7 @@ using VMS.TPS.Common.Model.API;
 using VMS.TPS.Common.Model.Types;
 using JR.Utils.GUI.Forms;
 
-//This script is based on a GitHub version from mtparagon5 from 20200227 (https://github.com/mtparagon5/ESAPI-Projects/tree/master/Projects/v15/OptiAssistant) but highly manipulated and more features are added
+//This script is based on a GitHub version from mtparagon5 from 20200227 (https://github.com/mtparagon5/ESAPI-Projects/tree/master/Projects/v15/ContourUnions) but highly manipulated and more features are added
 
 // TODO: Uncomment the following line if the script requires write access.
 [assembly: ESAPIScript(IsWriteable = true)]
@@ -101,7 +101,7 @@ namespace VMS.TPS
             #region window definitions
 
             // Add existing WPF control to the script window.
-            var mainControl = new OptiAssistant.MainControl();
+            var mainControl = new ContourUnions.MainControl();
             
             mainControl.zwindow = window;
       //window.WindowStyle = WindowStyle.None;
